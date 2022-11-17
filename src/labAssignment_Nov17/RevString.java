@@ -95,7 +95,7 @@ public class RevString {
 			
 		}
 		
-		else if((input.length()<5)||(input.length()>25)) {
+		else if((input.length()<=5)||(input.length()>=25)) {
 			throw new Exception("Invalid input enter string with length between 5 to 25 ");
 		}
 		
