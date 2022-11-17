@@ -28,7 +28,7 @@ public class RevString {
 			
 		}
 		
-		else if((input.length()<5)||(input.length()>25)) {
+		else if((input.length()<=5)||(input.length()>=25)) {
 			throw new Exception("Invalid input enter string with length between 5 to 25 ");
 		}
 		
@@ -128,7 +128,7 @@ public class RevString {
 	try {
 		
 		int lengthcheck=source.length();
-		if(lengthcheck >=5 && lengthcheck <=25) {
+		if(lengthcheck >5 && lengthcheck <25) {
 			 int i, length = source.length();
 			    StringBuilder dest = new StringBuilder(length);
 
